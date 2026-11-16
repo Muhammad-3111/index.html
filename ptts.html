@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Available Pets - Happy Paws</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+    <!-- Navigation -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🐾 Happy Paws
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">Home</a>
+                </li>
+
+                <li>
+                    <a href="pets.html" class="active">
+                        Available Pets
+                    </a>
+                </li>
+
+                <li>
+                    <a href="features.html">
+                        Features
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <button class="menu-btn"
+                    onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Page Header -->
+
+    <section class="page-header">
+
+        <span class="small-heading">
+            FIND YOUR COMPANION
+        </span>
+
+        <h1>Available Pets 🐾</h1>
+
+        <p>
+            Meet some of the wonderful pets waiting
+            for their forever homes.
+        </p>
+
+    </section>
+
+
+    <!-- Search -->
+
+    <section class="pet-search">
+
+        <input
+            type="text"
+            id="petSearch"
+            placeholder="Search for a pet..."
+            onkeyup="searchPets()">
+
+    </section>
+
+
+    <!-- Pets -->
+
+    <section class="pets-container">
+
+
+        <!-- Milo -->
+
+        <div class="pet-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=600&q=80"
+                alt="Milo">
+
+            <div class="pet-info">
+
+                <h2>Milo 🐶</h2>
+
+                <p>
+                    Friendly and playful dog who loves
+                    going for walks.
+                </p>
+
+                <div class="pet-tags">
+
+                    <span>2 Years</span>
+                    <span>Male</span>
+                    <span>2 KM</span>
+
+                </div>
+
+                <button
+                    class="btn"
+                    onclick="adoptPet('Milo')">
+
+                    Adopt Milo
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Luna -->
+
+        <div class="pet-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1514888286974-6c03e2ca1dba?auto=format&fit=crop&w=600&q=80"
+                alt="Luna">
+
+            <div class="pet-info">
+
+                <h2>Luna 🐱</h2>
+
+                <p>
+                    A calm and loving cat who enjoys
+                    relaxing indoors.
+                </p>
+
+                <div class="pet-tags">
+
+                    <span>1 Year</span>
+                    <span>Female</span>
+                    <span>4 KM</span>
+
+                </div>
+
+                <button
+                    class="btn"
+                    onclick="adoptPet('Luna')">
+
+                    Adopt Luna
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Rocky -->
+
+        <div class="pet-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1587300003388-59208cc962cb?auto=format&fit=crop&w=600&q=80"
+                alt="Rocky">
+
+            <div class="pet-info">
+
+                <h2>Rocky 🐶</h2>
+
+                <p>
+                    Energetic and cheerful dog looking
+                    for an active family.
+                </p>
+
+                <div class="pet-tags">
+
+                    <span>3 Years</span>
+                    <span>Male</span>
+                    <span>6 KM</span>
+
+                </div>
+
+                <button
+                    class="btn"
+                    onclick="adoptPet('Rocky')">
+
+                    Adopt Rocky
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <!-- Bella -->
+
+        <div class="pet-card">
+
+            <img
+                src="https://images.unsplash.com/photo-1543852786-1cf6624b9987?auto=format&fit=crop&w=600&q=80"
+                alt="Bella">
+
+            <div class="pet-info">
+
+                <h2>Bella 🐱</h2>
+
+                <p>
+                    Sweet and affectionate cat who loves
+                    attention and cuddles.
+                </p>
+
+                <div class="pet-tags">
+
+                    <span>2 Years</span>
+                    <span>Female</span>
+                    <span>5 KM</span>
+
+                </div>
+
+                <button
+                    class="btn"
+                    onclick="adoptPet('Bella')">
+
+                    Adopt Bella
+
+                </button>
+
+            </div>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>🐾 Happy Paws</h3>
+
+                <p>
+                    Helping pets find loving forever homes.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="pets.html">Pets</a>
+                <a href="features.html">Features</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>📧 happypaws@example.com</p>
+                <p>📞 +92 300 1234567</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Happy Paws Pet Adoption
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
