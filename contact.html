@@ -1,0 +1,286 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+
+    <meta charset="UTF-8">
+
+    <meta name="viewport"
+          content="width=device-width, initial-scale=1.0">
+
+    <title>Contact - Happy Paws</title>
+
+    <link rel="stylesheet" href="style.css">
+
+</head>
+
+
+<body>
+
+
+    <!-- Navigation -->
+
+    <header>
+
+        <nav class="navbar">
+
+            <div class="logo">
+                🐾 Happy Paws
+            </div>
+
+            <ul class="nav-links">
+
+                <li>
+                    <a href="index.html">
+                        Home
+                    </a>
+                </li>
+
+                <li>
+                    <a href="pets.html">
+                        Available Pets
+                    </a>
+                </li>
+
+                <li>
+                    <a href="features.html">
+                        Features
+                    </a>
+                </li>
+
+                <li>
+                    <a href="contact.html"
+                       class="active">
+                        Contact
+                    </a>
+                </li>
+
+            </ul>
+
+            <button class="menu-btn"
+                    onclick="toggleMenu()">
+                ☰
+            </button>
+
+        </nav>
+
+    </header>
+
+
+    <!-- Header -->
+
+    <section class="page-header">
+
+        <span class="small-heading">
+            GET IN TOUCH
+        </span>
+
+        <h1>Contact Us 📞</h1>
+
+        <p>
+            Have questions about adoption?
+            We would love to hear from you.
+        </p>
+
+    </section>
+
+
+    <!-- Contact -->
+
+    <section class="contact-container">
+
+
+        <!-- Contact Information -->
+
+        <div class="contact-info">
+
+            <h2>Let's Talk</h2>
+
+            <p>
+                If you are interested in adopting a pet
+                or need more information, contact us.
+            </p>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📧
+                </div>
+
+                <div>
+                    <h3>Email</h3>
+                    <p>happypaws@example.com</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📞
+                </div>
+
+                <div>
+                    <h3>Phone</h3>
+                    <p>+92 300 1234567</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    📍
+                </div>
+
+                <div>
+                    <h3>Location</h3>
+                    <p>Islamabad, Pakistan</p>
+                </div>
+
+            </div>
+
+
+            <div class="contact-item">
+
+                <div class="contact-icon">
+                    🕒
+                </div>
+
+                <div>
+                    <h3>Opening Hours</h3>
+                    <p>Monday - Saturday</p>
+                    <p>10:00 AM - 6:00 PM</p>
+                </div>
+
+            </div>
+
+        </div>
+
+
+        <!-- Contact Form -->
+
+        <div class="contact-form">
+
+            <h2>Send Us a Message</h2>
+
+            <form onsubmit="submitForm(event)">
+
+                <label for="name">
+                    Your Name
+                </label>
+
+                <input
+                    type="text"
+                    id="name"
+                    placeholder="Enter your name"
+                    required>
+
+
+                <label for="email">
+                    Email Address
+                </label>
+
+                <input
+                    type="email"
+                    id="email"
+                    placeholder="Enter your email"
+                    required>
+
+
+                <label for="subject">
+                    Subject
+                </label>
+
+                <input
+                    type="text"
+                    id="subject"
+                    placeholder="What is your message about?"
+                    required>
+
+
+                <label for="message">
+                    Message
+                </label>
+
+                <textarea
+                    id="message"
+                    rows="6"
+                    placeholder="Write your message..."
+                    required></textarea>
+
+
+                <button
+                    type="submit"
+                    class="btn">
+
+                    Send Message
+
+                </button>
+
+            </form>
+
+        </div>
+
+
+    </section>
+
+
+    <!-- Footer -->
+
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+
+                <h3>🐾 Happy Paws</h3>
+
+                <p>
+                    Helping pets find loving forever homes.
+                </p>
+
+            </div>
+
+
+            <div>
+
+                <h3>Quick Links</h3>
+
+                <a href="index.html">Home</a>
+                <a href="pets.html">Pets</a>
+                <a href="features.html">Features</a>
+                <a href="contact.html">Contact</a>
+
+            </div>
+
+
+            <div>
+
+                <h3>Contact</h3>
+
+                <p>📧 happypaws@example.com</p>
+                <p>📞 +92 300 1234567</p>
+
+            </div>
+
+        </div>
+
+
+        <div class="copyright">
+
+            © 2026 Happy Paws Pet Adoption
+
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
