@@ -1,39 +1,210 @@
 <!--Muhammad i263111-->
-<!doctype html>
-<html>
-    <head>
-        <title>PET ADOPTION</title>
-         <link rel="stylesheet" href="style.css">
-    </head>
-    <body>
-        <h1>PET ADOPTION</h1>
-        <p>Fing your new best friend</p>
-        <img src= "https://cdn.mos.cms.futurecdn.net/v2/t:0,l:240,cw:1440,ch:1080,q:80,w:1440/ASHH5bDmsp6wnK6mEfZdcU.jpg ">
-        <table>
-            <tr>
-    <th>Name</th>
-    <th>Age</th>
-    <th>Gender</th>
-    <th>Distance</th>
-  </tr>
-  <tr>
-    <td>Milo</td>
-    <td>2 Years</td>
-    <td>Male</td>
-    <td>2 KM away</td>
-        </table>
-       
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
 
-    <button onclick="sayHello()">Thank you for adoption</button>
+    <title>Happy Paws - Pet Adoption</title>
 
-<script>
-  function sayHello() {
-    console.log("come again");
-    window.alert("come again");
-  }
-</script>
+    <link rel="stylesheet" href="style.css">
+</head>
 
+<body>
+
+    <!-- Navigation Bar -->
+    <header>
+        <nav class="navbar">
+
+            <div class="logo">
+                🐾 Happy Paws
+            </div>
+
+            <ul class="nav-links">
+                <li><a href="index.html" class="active">Home</a></li>
+                <li><a href="pets.html">Available Pets</a></li>
+                <li><a href="features.html">Features</a></li>
+                <li><a href="contact.html">Contact</a></li>
+            </ul>
+
+            <button class="menu-btn" onclick="toggleMenu()">☰</button>
+
+        </nav>
+    </header>
 
 
-    </body>
+    <!-- Hero Section -->
+    <section class="hero">
+
+        <div class="hero-content">
+
+            <span class="small-heading">FIND YOUR NEW BEST FRIEND</span>
+
+            <h1>
+                Give a Pet a
+                <span>Forever Home</span>
+            </h1>
+
+            <p>
+                Every pet deserves a loving family.
+                Find your perfect companion and give them
+                the happy life they deserve.
+            </p>
+
+            <div class="hero-buttons">
+                <a href="pets.html" class="btn">View Available Pets</a>
+
+                <a href="contact.html" class="btn secondary-btn">
+                    Contact Us
+                </a>
+            </div>
+
+        </div>
+
+
+        <div class="hero-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1552053831-71594a27632d?auto=format&fit=crop&w=900&q=80"
+                alt="Happy dog">
+
+        </div>
+
+    </section>
+
+
+    <!-- Introduction -->
+    <section class="intro">
+
+        <h2>Why Adopt a Pet?</h2>
+
+        <p>
+            Adoption gives animals a second chance at a happy life.
+            When you adopt, you gain a loyal companion while helping
+            reduce the number of homeless animals.
+        </p>
+
+        <div class="intro-cards">
+
+            <div class="intro-card">
+                <div class="icon">❤️</div>
+                <h3>Save a Life</h3>
+                <p>
+                    Give an animal the loving home they deserve.
+                </p>
+            </div>
+
+
+            <div class="intro-card">
+                <div class="icon">🐾</div>
+                <h3>Find a Friend</h3>
+                <p>
+                    Find a loyal companion that matches your lifestyle.
+                </p>
+            </div>
+
+
+            <div class="intro-card">
+                <div class="icon">🏠</div>
+                <h3>Give a Home</h3>
+                <p>
+                    Provide a safe and caring environment for a pet.
+                </p>
+            </div>
+
+        </div>
+
+    </section>
+
+
+    <!-- Featured Pet -->
+    <section class="featured">
+
+        <div class="featured-image">
+
+            <img
+                src="https://images.unsplash.com/photo-1543466835-00a7907e9de1?auto=format&fit=crop&w=800&q=80"
+                alt="Milo the dog">
+
+        </div>
+
+
+        <div class="featured-content">
+
+            <span class="small-heading">PET OF THE WEEK</span>
+
+            <h2>Meet Milo 🐶</h2>
+
+            <p>
+                Milo is a friendly 2-year-old male dog who loves
+                playing, walking and spending time with people.
+            </p>
+
+            <div class="pet-details">
+
+                <div>
+                    <strong>Age</strong>
+                    <span>2 Years</span>
+                </div>
+
+                <div>
+                    <strong>Gender</strong>
+                    <span>Male</span>
+                </div>
+
+                <div>
+                    <strong>Distance</strong>
+                    <span>2 KM Away</span>
+                </div>
+
+            </div>
+
+            <button class="btn" onclick="adoptPet('Milo')">
+                Adopt Milo
+            </button>
+
+        </div>
+
+    </section>
+
+
+    <!-- Footer -->
+    <footer>
+
+        <div class="footer-content">
+
+            <div>
+                <h3>🐾 Happy Paws</h3>
+                <p>
+                    Helping pets find loving forever homes.
+                </p>
+            </div>
+
+            <div>
+                <h3>Quick Links</h3>
+                <a href="index.html">Home</a>
+                <a href="pets.html">Pets</a>
+                <a href="features.html">Features</a>
+                <a href="contact.html">Contact</a>
+            </div>
+
+            <div>
+                <h3>Contact</h3>
+                <p>📧 happypaws@example.com</p>
+                <p>📞 +92 300 1234567</p>
+                <p>📍 Islamabad, Pakistan</p>
+            </div>
+
+        </div>
+
+        <div class="copyright">
+            <p>© 2026 Happy Paws Pet Adoption. All Rights Reserved.</p>
+        </div>
+
+    </footer>
+
+
+    <script src="script.js"></script>
+
+</body>
 </html>
